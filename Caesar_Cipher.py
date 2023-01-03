@@ -36,14 +36,14 @@ def load_words(file_name):
     Depending on the size of the word list, this function may
     take a while to finish.
     '''
-    print('Loading word list from file...')
+    # print('Loading word list from file...')
     # inFile: file
     in_file = open(file_name, 'r')
     # line: string
     line = in_file.readline()
     # word_list: list of strings
     word_list = line.split()
-    print('  ', len(word_list), 'words loaded.')
+    # print('  ', len(word_list), 'words loaded.')
     in_file.close()
     return word_list
 
@@ -280,7 +280,7 @@ class CiphertextMessage(Message):
 
 
 # FUNCTIONS
-def encoder():
+def encrypter():
     '''
     Accepts a text input from the user
     Returns an encoded version of the message
@@ -291,7 +291,7 @@ def encoder():
     shiftedMessage = userInput.apply_shift(random.randint(0,25))
     return shiftedMessage
 
-def decoder():
+def decrypter():
     '''
     Accepts a text input from the user
     Returns a decoded version of the message
@@ -323,8 +323,8 @@ def whichTask():
 print('Welcome agent. I am Caesar Cipher, here to encode and decode your messages.')
 userChoice = whichTask()
 if userChoice == 1:
-    encodedMessage = encoder()
-    print('Your encoded message is:', encodedMessage)
+    encryptedMessage = encrypter()
+    print('Your encoded message is:', encryptedMessage)
 elif userChoice == 2:
-    decodedMessage = decoder()
-    print('Your decoded message is:', decodedMessage)
+    decryptedMessage = decrypter()
+    print('Your decoded message is:', decryptedMessage)
