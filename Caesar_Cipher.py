@@ -8,8 +8,6 @@ DESCRIPTION:
 A classic Caesar Cipher that can be used to encrypt or decrypt a text message
 input by the user.
 ------------------------------------------
-The variable HAND_SIZE determines the number of letters dealt to the player.
-------------------------------------------
 NOTE: This program was completed as part of the course MITx 6.00.1x - Introduction
 to Computer Science and Programming using Python. The general framework, and some
 of the functions were provided materials. The majority of the implementation is
