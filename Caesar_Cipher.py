@@ -15,7 +15,7 @@ my own work.
 The provided functions include:
     loadwords()
     is_word()
-The remainder of the function names were provided with pseudocode descriptions,
+Several of the other function names were provided with pseudocode descriptions,
 but the implementations are my own.
 """
 
